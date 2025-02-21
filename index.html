@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-   
+
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
@@ -84,18 +84,15 @@
 
             <form action="" method="post">
                <h3>Conecte-se</h3>
-               <input type="email" name="email" required class="box" placeholder="Insira seu email" maxlength="50">
-               <input type="password" name="pass" required class="box" placeholder="Insira sua senha" maxlength="20">
+               <input type="text" name="name" required class="box" placeholder="Insira seu nome" maxlength="20">
+               <input type="number" name="number" required class="box" placeholder="Insira seu cpf" maxlength="50">
                <input type="submit" value="Conctar-se" name="login" class="btn">
             </form>
 
             <form action="" method="post">
                <h3>Registre-se agora</h3>
                <input type="text" name="name" required class="box" placeholder="Insira seu nome" maxlength="20">
-               <input type="email" name="email" required class="box" placeholder="Insira seu email" maxlength="50">
-               <input type="password" name="pass" required class="box" placeholder="Insira sua senha" maxlength="20">
-               <input type="password" name="cpass" required class="box" placeholder="Confirme a senha"
-                  maxlength="20">
+               <input type="number" name="number" required class="box" placeholder="Insira seu cpf" maxlength="50">
                <input type="submit" value="Registrar" name="register" class="btn">
             </form>
 
@@ -143,59 +140,59 @@
 
    <div class="shopping-cart">
       <section>
-        <div id="close-cart"><span>fechar</span></div>
-    
-        <div class="box">
-          <a href="#" class="fas fa-times remove-item"></a>
-          <img src="images/pizza-1.jpg" alt="">
-          <div class="content">
-            <p>pizza-1 <span>( R$3 x 2 )</span></p>
-            <form action="" method="post">
-              <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-              <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-          </div>
-        </div>
-    
-        <div class="box">
-          <a href="#" class="fas fa-times remove-item"></a>
-          <img src="images/pizza-3.jpg" alt="">
-          <div class="content">
-            <p>pizza-3 <span>( R$2 x 1 )</span></p>
-            <form action="" method="post">
-              <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-              <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-          </div>
-        </div>
-    
-        <div class="box">
-          <a href="#" class="fas fa-times remove-item"></a>
-          <img src="images/pizza-6.jpg" alt="">
-          <div class="content">
-            <p>pizza-6 <span>( R$4 x 2 )</span></p>
-            <form action="" method="post">
-              <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-              <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-          </div>
-        </div>
-    
-        <div class="box">
-          <a href="#" class="fas fa-times remove-item"></a>
-          <img src="images/pizza-7.jpg" alt="">
-          <div class="content">
-            <p>pizza-7 <span>( R$2 x 1 )</span></p>
-            <form action="" method="post">
-              <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-              <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-          </div>
-        </div>
-    
-        <a href="#order" class="btn">Fazer pedido</a>
+         <div id="close-cart"><span>fechar</span></div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times remove-item"></a>
+            <img src="images/pizza-1.jpg" alt="">
+            <div class="content">
+               <p>pizza-1 <span>( R$3 x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times remove-item"></a>
+            <img src="images/pizza-3.jpg" alt="">
+            <div class="content">
+               <p>pizza-3 <span>( R$2 x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times remove-item"></a>
+            <img src="images/pizza-6.jpg" alt="">
+            <div class="content">
+               <p>pizza-6 <span>( R$4 x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times remove-item"></a>
+            <img src="images/pizza-7.jpg" alt="">
+            <div class="content">
+               <p>pizza-7 <span>( R$2 x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <a href="#order" class="btn">Fazer pedido</a>
       </section>
-    </div>
+   </div>
 
    <div class="home-bg">
 
@@ -282,107 +279,107 @@
    <!-- about section ends -->
 
    <!-- menu section starts  -->
+   <div class="wrapper">
+      <section id="menu" class="menu">
 
-   <section id="menu" class="menu">
+         <h1 class="heading">Nosso menu</h1>
 
-      <h1 class="heading">Nosso menu</h1>
+         <div class="box-container">
 
-      <div class="box-container">
+            <div class="box">
+               <div class="price">R$<span>2</span></div>
+               <img src="images/pizza-1.jpg" alt="">
+               <div class="name">pizza 1</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
 
-         <div class="box">
-            <div class="price">R$<span>2</span></div>
-            <img src="images/pizza-1.jpg" alt="">
-            <div class="name">pizza 1</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
+            <div class="box">
+               <div class="price">R$<span>4</span></div>
+               <img src="images/pizza-2.jpg" alt="">
+               <div class="name">pizza 2</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
+            <div class="box">
+               <div class="price">R$<span>2</span></div>
+               <img src="images/pizza-3.jpg" alt="">
+               <div class="name">pizza 3</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
+            <div class="box">
+               <div class="price">R$<span>3</span></div>
+               <img src="images/pizza-4.jpg" alt="">
+               <div class="name">pizza 4</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
+            <div class="box">
+               <div class="price">R$<span>2</span></div>
+               <img src="images/pizza-5.jpg" alt="">
+               <div class="name">pizza 5</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
+            <div class="box">
+               <div class="price">R$<span>4</span></div>
+               <img src="images/pizza-6.jpg" alt="">
+               <div class="name">pizza 6</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
+            <div class="box">
+               <div class="price">R$<span>2</span></div>
+               <img src="images/pizza-7.jpg" alt="">
+               <div class="name">pizza 7</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
+            <div class="box">
+               <div class="price">R$<span>3</span></div>
+               <img src="images/pizza-8.jpg" alt="">
+               <div class="name">pizza 8</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
+            <div class="box">
+               <div class="price">R$<span>4</span></div>
+               <img src="images/pizza-9.jpg" alt="">
+               <div class="name">pizza 9</div>
+               <form action="" method="post">
+                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+               </form>
+            </div>
+
          </div>
 
-         <div class="box">
-            <div class="price">R$<span>4</span></div>
-            <img src="images/pizza-2.jpg" alt="">
-            <div class="name">pizza 2</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-         <div class="box">
-            <div class="price">R$<span>2</span></div>
-            <img src="images/pizza-3.jpg" alt="">
-            <div class="name">pizza 3</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-         <div class="box">
-            <div class="price">R$<span>3</span></div>
-            <img src="images/pizza-4.jpg" alt="">
-            <div class="name">pizza 4</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-         <div class="box">
-            <div class="price">R$<span>2</span></div>
-            <img src="images/pizza-5.jpg" alt="">
-            <div class="name">pizza 5</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-         <div class="box">
-            <div class="price">R$<span>4</span></div>
-            <img src="images/pizza-6.jpg" alt="">
-            <div class="name">pizza 6</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-         <div class="box">
-            <div class="price">R$<span>2</span></div>
-            <img src="images/pizza-7.jpg" alt="">
-            <div class="name">pizza 7</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-         <div class="box">
-            <div class="price">R$<span>3</span></div>
-            <img src="images/pizza-8.jpg" alt="">
-            <div class="name">pizza 8</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-         <div class="box">
-            <div class="price">R$<span>4</span></div>
-            <img src="images/pizza-9.jpg" alt="">
-            <div class="name">pizza 9</div>
-            <form action="" method="post">
-               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-               <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-            </form>
-         </div>
-
-      </div>
-
-   </section>
-
+      </section>
+   </div>
    <!-- menu section ends -->
 
    <!-- order section starts  -->
@@ -454,7 +451,10 @@
                <i class="fas fa-angle-down"></i>
             </div>
             <p class="accrodion-content">
-               Na PitMania, fazer seu pedido é fácil e rápido! Basta escolher sua pizza favorita no menu, personalizá-la com ingredientes extras ou opções especiais, finalizar a compra online e optar por entrega ou retirada. Se preferir entrega, levamos até você com rapidez; ou, se preferir, pode retirar na loja no horário combinado. Simples assim, para você desfrutar da melhor pizza!
+               Na PitMania, fazer seu pedido é fácil e rápido! Basta escolher sua pizza favorita no menu,
+               personalizá-la com ingredientes extras ou opções especiais, finalizar a compra online e optar por
+               entrega ou retirada. Se preferir entrega, levamos até você com rapidez; ou, se preferir, pode retirar
+               na loja no horário combinado. Simples assim, para você desfrutar da melhor pizza!
             </p>
          </div>
 
@@ -464,7 +464,10 @@
                <i class="fas fa-angle-down"></i>
             </div>
             <p class="accrodion-content">
-               O tempo de entrega varia conforme a localização, mas garantimos rapidez e eficiência! Após a confirmação do seu pedido, nossa equipe prepara a pizza com todo o cuidado e, em seguida, ela é enviada diretamente para você. Normalmente, o tempo estimado de entrega é de 30 a 60 minutos, dependendo da distância e do volume de pedidos.
+               O tempo de entrega varia conforme a localização, mas garantimos rapidez e eficiência! Após a
+               confirmação do seu pedido, nossa equipe prepara a pizza com todo o cuidado e, em seguida, ela é
+               enviada diretamente para você. Normalmente, o tempo estimado de entrega é de 30 a 60 minutos,
+               dependendo da distância e do volume de pedidos.
             </p>
          </div>
 
@@ -474,7 +477,10 @@
                <i class="fas fa-angle-down"></i>
             </div>
             <p class="accrodion-content">
-               Sim, você pode fazer pedidos para grandes festas e eventos! Oferecemos opções especiais para grupos, com combos e tamanhos maiores de pizza para atender sua demanda. Basta entrar em contato conosco com antecedência para garantir que tudo esteja pronto no horário combinado, e faremos o possível para que sua festa seja um sucesso com nossas deliciosas pizzas!
+               Sim, você pode fazer pedidos para grandes festas e eventos! Oferecemos opções especiais para grupos,
+               com combos e tamanhos maiores de pizza para atender sua demanda. Basta entrar em contato conosco com
+               antecedência para garantir que tudo esteja pronto no horário combinado, e faremos o possível para que
+               sua festa seja um sucesso com nossas deliciosas pizzas!
             </p>
          </div>
 
@@ -484,7 +490,13 @@
                <i class="fas fa-angle-down"></i>
             </div>
             <p class="accrodion-content">
-               A quantidade de proteína em uma pizza pode variar dependendo de seus ingredientes, mas, em média, uma fatia de pizza de tamanho médio contém entre 10 e 15 gramas de proteína. Essa proteína vem principalmente do queijo e das coberturas, especialmente se forem de origem animal, como frango, carne bovina, ou pepperoni. Pizzas vegetarianas podem ter uma quantidade menor, mas ingredientes como queijo extra, cogumelos, e tofu também ajudam a aumentar o teor proteico. Portanto, ao saborear uma pizza, além do sabor, você também está consumindo uma boa dose de proteína, essencial para o funcionamento do organismo!
+               A quantidade de proteína em uma pizza pode variar dependendo de seus ingredientes, mas, em média, uma
+               fatia de pizza de tamanho médio contém entre 10 e 15 gramas de proteína. Essa proteína vem
+               principalmente do queijo e das coberturas, especialmente se forem de origem animal, como frango, carne
+               bovina, ou pepperoni. Pizzas vegetarianas podem ter uma quantidade menor, mas ingredientes como queijo
+               extra, cogumelos, e tofu também ajudam a aumentar o teor proteico. Portanto, ao saborear uma pizza,
+               além do sabor, você também está consumindo uma boa dose de proteína, essencial para o funcionamento do
+               organismo!
             </p>
          </div>
 
@@ -551,7 +563,9 @@
 
    <!-- custom js file link  -->
    <script src="js/script.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
