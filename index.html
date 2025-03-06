@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="images/logo-pit-mania.png">
    <title>Pitmania</title>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <!-- font awesome cdn link  -->
@@ -22,7 +23,7 @@
    <header class="header">
 
       <section class="flex">
-         <img src="images/logo-pit-mania.png" height="120px" width="150px" alt="">
+         <a href="index.html"><img src="images/logo-pit-mania.png" height="80px" width="80px" alt=""></a>
          <a href="#home" class="name"><img src="" alt=""></a>
 
          <nav class="navbar">
@@ -43,8 +44,11 @@
             <b>
                <div id="order-btn" class="fas fa-box"></div>
             </b>
+            <!-- Carrinho -->
             <b>
-               <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+               <div id="cart-btn" class="fas fa-shopping-cart">
+                  <span id="cart-count">(0)</span>
+               </div>
             </b>
          </div>
 
@@ -138,57 +142,12 @@
 
    </div>
 
+   <!-- Carrinho -->
    <div class="shopping-cart">
       <section>
          <div id="close-cart"><span>fechar</span></div>
 
-         <div class="box">
-            <a href="#" class="fas fa-times remove-item"></a>
-            <img src="images/pizza-1.jpg" alt="">
-            <div class="content">
-               <p>pizza-1 <span>( R$3 x 2 )</span></p>
-               <form action="" method="post">
-                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
-               </form>
-            </div>
-         </div>
-
-         <div class="box">
-            <a href="#" class="fas fa-times remove-item"></a>
-            <img src="images/pizza-3.jpg" alt="">
-            <div class="content">
-               <p>pizza-3 <span>( R$2 x 1 )</span></p>
-               <form action="" method="post">
-                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
-               </form>
-            </div>
-         </div>
-
-         <div class="box">
-            <a href="#" class="fas fa-times remove-item"></a>
-            <img src="images/pizza-6.jpg" alt="">
-            <div class="content">
-               <p>pizza-6 <span>( R$4 x 2 )</span></p>
-               <form action="" method="post">
-                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
-               </form>
-            </div>
-         </div>
-
-         <div class="box">
-            <a href="#" class="fas fa-times remove-item"></a>
-            <img src="images/pizza-7.jpg" alt="">
-            <div class="content">
-               <p>pizza-7 <span>( R$2 x 1 )</span></p>
-               <form action="" method="post">
-                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
-               </form>
-            </div>
-         </div>
+         <div id="cart-items"></div>
 
          <a href="#order" class="btn">Fazer pedido</a>
       </section>
@@ -241,150 +200,204 @@
 
    <!-- about section starts  -->
 
-   <section class="about" id="about">
 
-      <h1 class="heading">Sobre Nós</h1>
-
-      <div class="box-container">
-
-         <div class="box">
-            <img src="images/about-1.svg" alt="">
-            <h3>Feitas com Amor</h3>
-            <p>"Nossas pizzas são preparadas com ingredientes frescos e massa artesanal, sempre com muito carinho. Cada
-               detalhe é pensado para oferecer uma experiência única, onde o amor por cozinhar se reflete em cada fatia.
-               Venha provar!"</p>
-            <a href="#menu" class="btn">Nosso menu</a>
-         </div>
-
-         <div class="box">
-            <img src="images/about-2.svg" alt="">
-            <h3>40 - 50 minutos para entrega</h3>
-            <p>Nosso delivery garante pizzas artesanais entregues com rapidez e qualidade. Feitas com ingredientes
-               frescos, nossas pizzas chegam quentinhas, mantendo o sabor e a excelência no conforto da sua casa.</p>
-            <a href="#menu" class="btn">Nosso menu</a>
-         </div>
-
-         <div class="box">
-            <img src="images/about-3.svg" alt="">
-            <h3>Compartilhe com os Amigos</h3>
-            <p>Compartilhe o sabor das nossas pizzas artesanais com os amigos! Peça pelo delivery e aproveite momentos
-               deliciosos no conforto de casa, com pizzas quentinhas e com ingredientes frescos e qualidade.</p>
-            <a href="#menu" class="btn">Nosso menu</a>
-         </div>
-
-      </div>
-
-   </section>
 
    <!-- about section ends -->
 
    <!-- menu section starts  -->
    <div class="wrapper">
       <section id="menu" class="menu">
+         <h1 class="heading">Nosso Menu</h1>
 
-         <h1 class="heading">Nosso menu</h1>
-
-         <div class="box-container">
-
-            <div class="box">
-               <div class="price">R$<span>2</span></div>
-               <img src="images/pizza-1.jpg" alt="">
-               <div class="name">pizza 1</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>4</span></div>
-               <img src="images/pizza-2.jpg" alt="">
-               <div class="name">pizza 2</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>2</span></div>
-               <img src="images/pizza-3.jpg" alt="">
-               <div class="name">pizza 3</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>3</span></div>
-               <img src="images/pizza-4.jpg" alt="">
-               <div class="name">pizza 4</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>2</span></div>
-               <img src="images/pizza-5.jpg" alt="">
-               <div class="name">pizza 5</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>4</span></div>
-               <img src="images/pizza-6.jpg" alt="">
-               <div class="name">pizza 6</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>2</span></div>
-               <img src="images/pizza-7.jpg" alt="">
-               <div class="name">pizza 7</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>3</span></div>
-               <img src="images/pizza-8.jpg" alt="">
-               <div class="name">pizza 8</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
-            <div class="box">
-               <div class="price">R$<span>4</span></div>
-               <img src="images/pizza-9.jpg" alt="">
-               <div class="name">pizza 9</div>
-               <form action="" method="post">
-                  <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                  <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
-               </form>
-            </div>
-
+         <!-- Abas de navegação -->
+         <div class="tabs">
+            <button class="tab-btn" data-tab="pizza">Pizzas</button>
+            <button class="tab-btn" data-tab="sanduiche">Sanduíches</button>
+            <button class="tab-btn" data-tab="bebida">Bebidas</button>
          </div>
 
+         <!-- Conteúdo das abas -->
+         <div class="tab-content pizza">
+            <div class="box-container">
+               <!-- Cardapio de pizzas -->
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-1.jpg" alt="">
+                  <div class="name">Pizza 1</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-2.jpg" alt="">
+                  <div class="name">Pizza 2</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-3.jpg" alt="">
+                  <div class="name">Pizza 3</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-4.jpg" alt="">
+                  <div class="name">Pizza 4</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-5.jpg" alt="">
+                  <div class="name">Pizza 5</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-6.jpg" alt="">
+                  <div class="name">Pizza 6</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-7.jpg" alt="">
+                  <div class="name">Pizza 7</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>2</span></div>
+                  <img src="images/pizza-8.jpg" alt="">
+                  <div class="name">Pizza 8</div>
+                  <form id="formPedido" action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <!-- Adicione os outros itens de pizza aqui -->
+            </div>
+         </div>
+
+         <div class="tab-content sanduiche">
+            <div class="box-container">
+               <!-- Cardapio de sanduíches -->
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/AmericanoSimples.jpg" alt="">
+                  <div class="name">Americano Especial</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/baconEspecial.jpg" alt="">
+                  <div class="name">baconEspecial</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/dogEspecial.jpeg" alt="">
+                  <div class="name">Dog Especial</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/misto.png" alt="">
+                  <div class="name">Misto</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/XCalabresaSimples.jpg" alt="">
+                  <div class="name">Calabresa Simples</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/XDog.jpeg" alt="">
+                  <div class="name">XDog</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/XRangoEspecial.png" alt="">
+                  <div class="name">X Rango Especial</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <div class="box">
+                  <div class="price">R$<span>5</span></div>
+                  <img src="image2/XSaladaSImples.avif" alt="">
+                  <div class="name">X-Salada SImples</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <!-- Adicione os outros itens de sanduíche aqui -->
+            </div>
+         </div>
+
+         <div class="tab-content bebida">
+            <div class="box-container">
+               <!-- Cardapio de bebidas -->
+               <div class="box">
+                  <div class="price">R$<span>3</span></div>
+                  <img src="images/bebida-1.jpg" alt="">
+                  <div class="name">Bebida 1</div>
+                  <form action="" method="post">
+                     <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                     <input type="submit" value="Fazer pedido" name="add_to_cart" class="btn">
+                  </form>
+               </div>
+               <!-- Adicione os outros itens de bebida aqui -->
+            </div>
+         </div>
       </section>
    </div>
+
    <!-- menu section ends -->
 
    <!-- order section starts  -->
 
-   <section class="order" id="order">
+   <!-- <section class="order" id="order">
 
       <h1 class="heading">Fazer pedido</h1>
 
@@ -433,7 +446,7 @@
 
       </form>
 
-   </section>
+   </section> -->
 
    <!-- order section ends -->
 
@@ -517,6 +530,43 @@
    </section>
 
    <!-- faq section ends -->
+
+   <section class="about" id="about">
+
+      <h1 class="heading">Sobre Nós</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/about-1.svg" alt="">
+            <h3>Feitas com Amor</h3>
+            <p>"Nossas pizzas são preparadas com ingredientes frescos e massa artesanal, sempre com muito carinho. Cada
+               detalhe é pensado para oferecer uma experiência única, onde o amor por cozinhar se reflete em cada fatia.
+               Venha provar!"</p>
+            <a href="#menu" class="btn">Nosso menu</a>
+         </div>
+
+         <div class="box">
+            <img src="images/about-2.svg" alt="">
+            <h3>40 - 50 minutos para entrega</h3>
+            <p>Nosso delivery garante pizzas artesanais entregues com rapidez e qualidade. Feitas com ingredientes
+               frescos, nossas pizzas chegam quentinhas, mantendo o sabor e a excelência no conforto da sua casa.</p>
+            <a href="#menu" class="btn">Nosso menu</a>
+         </div>
+
+         <div class="box">
+            <img src="images/about-3.svg" alt="">
+            <h3>Compartilhe com os Amigos</h3>
+            <p>Compartilhe o sabor das nossas pizzas artesanais com os amigos! Peça pelo delivery e aproveite momentos
+               deliciosos no conforto de casa, com pizzas quentinhas e com ingredientes frescos e qualidade.</p>
+            <a href="#menu" class="btn">Nosso menu</a>
+         </div>
+
+      </div>
+
+
+   </section>
+
 
    <!-- footer section starts  -->
 
