@@ -77,22 +77,43 @@ section {
 
 .btn-whatsapp {
    position: fixed;
-   width: 60px;
-   height: 60px;
+   width: 40px;
+   height: 40px;
    bottom: 40px;
    right: 40px;
    background-color: #25d366;
    color: #fff;
    border-radius: 50px;
    text-align: center;
-   font-size: 30px;
-   line-height: 60px;
+   font-size: 20px;
+   line-height: 42px;
    box-shadow: 1px 1px 2px #888;
    z-index: 1000;
 }
 
 .bi-whatsapp {
    margin-top: 0;
+}
+
+.arrow-top {
+   position: fixed;
+   width: 40px;
+   height: 40px;
+   bottom: 85px;
+   right: 40px;
+   background-color: var(--red);
+   color: #fff;
+   border-radius: 50px;
+   text-align: center;
+   font-size: 20px;
+   line-height: 45px;
+   box-shadow: 1px 1px 2px #888;
+   z-index: 1000;
+}
+
+.bi-arrow-up {
+   margin-top: 0;
+
 }
 
 .btn {
@@ -114,6 +135,7 @@ section {
 }
 
 .header {
+   justify-content: center;
    position: fixed;
    top: 0;
    left: 0;
@@ -440,6 +462,7 @@ section {
 @keyframes fadeRight {
    0% {
       transform: translateX(-5rem);
+      opacity: 0;
    }
 }
 
@@ -466,7 +489,7 @@ section {
 
 .home-bg .home .slide-container .slide .image {
    flex: 1 1 40rem;
-   animation: fadeRight .8s linear;
+   animation: fadeRight 1.5s ease-in-out;
 }
 
 .home-bg .home .slide-container .slide .image img {
@@ -476,7 +499,7 @@ section {
 .home-bg .home .slide-container .slide .content {
    flex: 1 1 40rem;
    text-align: center;
-   animation: fadeLeft .8s linear;
+   animation: fadeLeft 1.5s ease-in-out;
 }
 
 .home-bg .home .slide-container .slide .content h3 {
@@ -1028,6 +1051,16 @@ section {
       width: 100%;
    }
 
+   .slide .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .slide .image img {
+      max-width: 100%;
+      height: auto;
+   }
 }
 
 @media (max-width:450px) {
